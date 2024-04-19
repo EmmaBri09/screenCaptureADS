@@ -1,6 +1,6 @@
 # Goal
 
-The goal is to detect the use of  screen capture by the threat actor, BadPatch, by looking for specific image files created by malicious software. 
+The goal is to detect the use of screen capture by the threat actor, BadPatch, by looking for specific image files created by malicious software. 
 
 # Categorization
 
@@ -50,7 +50,7 @@ The user creates an image with the same naming conventions as BadPatch.​ It ma
 
 # Validation
 
-Splunk can be used to deetect Event ID 11 from sysmon. Using the following query, you will be able to identify instances of the malware: 
+Splunk can be used to detect Event ID 11 from sysmon. Using the following query, you will be able to identify instances of the malware: 
 ```
 source="log-name.source-type" host="host-name" sourcetype="source-type"
 | search "Event ID"=11 "GDIPlus"
